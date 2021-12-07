@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<title>Synergy Hotel Employee Login</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<script>$(function(){$("#nav-placeholder").load("nav.html");});</script> <!-- This loads nav bar-->
+		<style>
+			div.grey {
+				background-color: #eee;
+				border-radius: 25px;
+				padding: 20px;
+				box-shadow: 10px 10px 8px #888888;
+			}
+			.form-horizontal{
+			width:180px;
+			margin-left:570px;}
+			h1,h3,footer{text-align:center;}
+		</style>
+	</head>
+	<body>
+		<nav id="nav-placeholder"></nav><!-- This loads nav bar-->
+		
+		<div class="jumbotron text-center">
+			<h1>Synergy Hotel Employee Login</h1>
+			<p>Welcome Valued Employee!</p> 
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+				</div>
+			<div class="col-sm-4 grey">
+				<h3>Login</h3>
+				<form class="col text-center" id = "test" >
+					<label>
+						<p class="col text-left">Username:</p>
+						<input type="text" name="username:" id="username" maxlength="50" required/>
+					</label>
+					<label>
+						<p class="col text-left">Password:</p>
+						<input type="password" name="password:"  maxlength="50" required/>
+					</label>
+					<div class="col text-center"><input type="submit" value="Go!"/></div>
+					
+				</form>
+			</div>
+				<div class="col-sm-4">
+				</div>
+			</div>
+		</div>
+		<script src="../javascript/employeeLogin.js"></script>
+	</body>
+</html>
