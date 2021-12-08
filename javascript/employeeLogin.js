@@ -7,7 +7,7 @@ document.getElementById('test').addEventListener('submit', function (e) {
 	//prevent the normal submission of the form
 	e.preventDefault();
 	console.log(nameInput.value);
-	httpGetAsync("http://localhost:5000/user/",console.log)
+	httpGetAsync("http://project02-env.eba-sb3s7umi.us-east-2.elasticbeanstalk.com/users",console.log)
 });
 
 
