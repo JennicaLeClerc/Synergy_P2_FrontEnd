@@ -7,13 +7,15 @@
   <title>Login</title>
   <link rel="stylesheet" href="../css/login-page.css">
   <script defer src="../javascript/login-page.js"></script>
-  <script>$(function(){$("#footer-placeholder").load("footer.html");});</script> <!-- This loads nav bar-->
-  <script>$(function(){$("#nav-placeholder").load("nav.html");});</script> <!-- This loads nav bar-->
+  <style>
+    div.hide1{
+      display: none
+    }
+  </style>
 </head>
 
 <body id="body1">
   <main id="main-holder">
-    <nav id="nav-placeholder"></nav><!-- This loads nav bar-->
     <p id="login-header" align="center">Sign in</p>
     
     <!---
@@ -31,16 +33,14 @@
     <div class="row">
       <div class="col-sm-4">
       </div>
-      <div class="col-sm-4 red hide1" id = "error">
-        <p>Username or Password are Incorrect</p>
+      <div class="hide1" id = "error">
+        <p align="center">*Username or Password are Incorrect*</p>
       </div>
       <div class="col-sm-4">
       </div>
     </div>
   
   </main>
-  <footer id ="footer-placeholder"></footer>
-  
 </body>
 
 </html>
