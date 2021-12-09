@@ -1,6 +1,4 @@
 
-
-
 var form = document.querySelector("form");
 
 
@@ -30,7 +28,7 @@ function response(responseText){
 	toggleClass(document.getElementById('error'),"hide1",true)
 	var jn = JSON.parse(responseText)
 	localStorage.setItem('token',"Bearer "+jn['jwt'])
-	//window.location.replace("employee.html");
+	window.location.href ="employee.html";
 	console.log(parseJwt(jn['jwt']))
 }
 
