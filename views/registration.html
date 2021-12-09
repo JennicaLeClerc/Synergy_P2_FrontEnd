@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
     <link rel="stylesheet" href="../css/synergy.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -105,4 +106,58 @@
 
 <script src = "../javascript/userRegistration.js"></script>
 </body>
+=======
+	<head>
+		<link rel="stylesheet" href="../css/synergy.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<title>Synergy Hotel Index Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script>$(function(){$("#footer-placeholder").load("footer.html");});</script> <!-- This loads nav bar-->
+	</head>
+	<body>
+		<nav id="nav-placeholder"></nav><!-- This loads nav bar-->
+		<div class="headerImage">
+			<div class="headerText">
+				<h1 class="header1">Synergy Hotel Management System</h1>
+				<h3>Karoke - Spa - Wine Tasting</h3>
+				<hr>
+			</div>
+			<h3>Create A New Account</h3>
+			<form id="userForm" action="userRegister" method="post">
+				<div class="form-group">
+					<label for="firstname">First Name</label>
+					<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
+					<span id="msg1">*</span>
+				</div>
+				<div class="form-group">
+					<label for="lastname">Last Name</label>
+					<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
+					<span id="msg2">*</span>
+				</div>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
+					<span id="msg3">*</span>
+				</div>
+				<div class="form-group">
+					<label for="userName">User Name</label>
+					<input type="text" class="form-control" id="userName" name="userName" placeholder="Enter User Name">
+					<span id="msg4">*</span>
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
+					<span id="msg5">*</span>
+				</div>
+				<input type="button" id="join_list" value="Submit">
+			</form>
+
+		<footer id ="footer-placeholder"></footer>
+	</body>
+>>>>>>> a1d56863b14fdcb01ebb4ca5c85e86bb7ba30e67
 </html>
