@@ -15,7 +15,6 @@
 <body>
 
 
-
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -35,36 +34,31 @@
         <hr>
     </div>
     <h3>Create A New Account</h3>
-    <form id="userForm" action="userRegister" method="post">
+    <form id="userForm">
         <div class="form-group">
             <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
-            <span id="msg1">*</span>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name" required> 
         </div>
         <div class="form-group">
             <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
-            <span id="msg2">*</span>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name" required>
         </div>
 
-        <div class="form-group">
+        <!-- <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
-            <span id="msg3">*</span>
-        </div>
+            <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+        </div> -->
 
         <div class="form-group">
             <label for="userName">User Name</label>
-            <input type="text" class="form-control" id="userName" name="userName" placeholder="Enter User Name">
-            <span id="msg4">*</span>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Enter User Name" required>
         </div>
 
         <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
-            <span id="msg5">*</span>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
         </div>
-        <input type="button" id="join_list" value="Submit">
+        <input type="submit" value="Submit">
 
 
     </form>
@@ -109,6 +103,6 @@
 
 
 
-
+<script src = "../javascript/userRegistration.js"></script>
 </body>
 </html>

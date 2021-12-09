@@ -4,10 +4,6 @@
 var form = document.querySelector("form");
 
 
-
-
-
-
 function toggleClass(element,classString,toggleOn){
 	cl = ""
 	for (const s of element.className.split(" ")){
@@ -16,10 +12,6 @@ function toggleClass(element,classString,toggleOn){
 	if (toggleOn) cl += " "+classString
 	element.className = cl;
 }
-
-
-
-
 
 function parseJwt (token) {
 	var base64Url = token.split('.')[1];
@@ -30,18 +22,9 @@ function parseJwt (token) {
 	return JSON.parse(jsonPayload);
 };
 
-
-
-
-
 function fail(status){
 	toggleClass(document.getElementById('error'),"hide1",false)
 }
-
-
-
-
-
 
 function response(responseText){
 	toggleClass(document.getElementById('error'),"hide1",true)
@@ -51,32 +34,22 @@ function response(responseText){
 	console.log(parseJwt(jn['jwt']))
 }
 
-
-
-
-
-function httpGetAsync(theUrl, callbackOK,callbackFAIL,body)
+function httpGetAsync(theUrl, callbackOK, callbackFAIL, body)
 {
 	var xmlHttp = new XMLHttpRequest();
 	xmlHttp.onreadystatechange = function() { 
-		if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+			if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
 			callbackOK(xmlHttp.responseText);
 			return;
 		}
 		else if (xmlHttp.readyState == 4){
 			callbackFAIL(xmlHttp.status);
 		}
-			
-
 	}
 	xmlHttp.open("POST", theUrl, true); // true for asynchronous 
-	xmlHttp.setRequestHeader("Content-Type","application/json")
+	xmlHttp.setRequestHeader("Content-Type", "application/json")
 	xmlHttp.send(JSON.stringify(body));
 }
-
-
-
-
 
 form.addEventListener('submit', function (e) {
 	//prevent the normal submission of the form
