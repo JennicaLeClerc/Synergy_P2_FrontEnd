@@ -1,112 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-    <link rel="stylesheet" href="../css/synergy.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <title>Synergy Hotel Index Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-
-
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><span class="vil">Synergy Hotel</span><span class="inn"> Management System</span> </a></div>
-        <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="amenities.html">Amenities</a></li>
-            <li><a href="reservation.html">Reservation</a></li>
-            <li><a href="todo.html">Things to do</a></li>
-        </ul>
-    </div>
-</nav>
-<div class="headerImage">
-    <div class="headerText">
-        <h1 class="header1">Synergy Hotel Management System</h1>
-        <h3>Karoke - Spa - Wine Tasting</h3>
-        <hr>
-    </div>
-    <h3>Create A New Account</h3>
-    <form id="userForm">
-        <div class="form-group">
-            <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name" required> 
-        </div>
-        <div class="form-group">
-            <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name" required>
-        </div>
-
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" required>
-        </div>
-
-        <div class="form-group">
-            <label for="userName">User Name</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="Enter User Name" required>
-        </div>
-
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
-        </div>
-        <input type="submit" value="Submit">
-
-
-    </form>
-
-<br><br><br>
-
-
-<footer>
-    <p><i>Copyright &copy; 2021 Synergy Hotel Management System. All Rights Reserved.</i></p>
-    <div class="container">
-        <table class="table table-condensed">
-
-            <tbody>
-            <tr class="tbHeader">
-                <td><h4>Address</h4></td>
-                <td><h4>Hours and Contact</h4></td>
-                <td><h4>On-site Services</h4></td>
-
-            </tr>
-            <tr class="tbHeader">
-                <td>133 Belvedere BLVGD</td>
-                <td>7:00 a.m. - 11:00 p.m.</td>
-                <td>Concierge Services</td>
-            </tr>
-            <tr class="tbHeader">
-                <td>Orlando FL</td>
-                <td>407-945-7889</td>
-                <td>Valet Parking</td>
-            </tr>
-            <tr class="tbHeader">
-                <td>34764</td>
-                <td>customerservice@synergy.com</td>
-                <td>ATM</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
-
-</footer>
-
-
-
-
-
-<script src = "../javascript/userRegistration.js"></script>
-</body>
-=======
 	<head>
 		<link rel="stylesheet" href="../css/synergy.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -117,10 +10,20 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-		<script>$(function(){$("#footer-placeholder").load("footer.html");});</script> <!-- This loads nav bar-->
 	</head>
 	<body>
-		<nav id="nav-placeholder"></nav><!-- This loads nav bar-->
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="index.html"><span class="vil">Synergy Hotel</span><span class="inn"> Management System</span> </a></div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="amenities.html">Amenities</a></li>
+					<li><a href="reservation.html">Reservation</a></li>
+					<li><a href="todo.html">Things to do</a></li>
+				</ul>
+			</div>
+		</nav>
 		<div class="headerImage">
 			<div class="headerText">
 				<h1 class="header1">Synergy Hotel Management System</h1>
@@ -128,36 +31,61 @@
 				<hr>
 			</div>
 			<h3>Create A New Account</h3>
-			<form id="userForm" action="userRegister" method="post">
+			<form id="userForm">
 				<div class="form-group">
 					<label for="firstname">First Name</label>
-					<input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter First Name">
-					<span id="msg1">*</span>
+					<input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter First Name" required> 
 				</div>
 				<div class="form-group">
 					<label for="lastname">Last Name</label>
-					<input type="text" class="form-control" id="lastname" name="lastname" placeholder="Enter Last Name">
-					<span id="msg2">*</span>
+					<input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter Last Name" required>
 				</div>
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
-					<span id="msg3">*</span>
+					<input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" required>
 				</div>
 				<div class="form-group">
 					<label for="userName">User Name</label>
-					<input type="text" class="form-control" id="userName" name="userName" placeholder="Enter User Name">
-					<span id="msg4">*</span>
+					<input type="text" class="form-control" id="username" name="username" placeholder="Enter User Name" required>
 				</div>
 				<div class="form-group">
 					<label for="password">Password</label>
-					<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password">
-					<span id="msg5">*</span>
+					<input type="password" class="form-control" id="password" name="password" placeholder="Enter Password" required>
 				</div>
-				<input type="button" id="join_list" value="Submit">
+				<input type="submit" value="Submit">
 			</form>
+		</div>
 
-		<footer id ="footer-placeholder"></footer>
+		<br><br><br>
+		<footer>
+			<p><i>Copyright &copy; 2021 Synergy Hotel Management System. All Rights Reserved.</i></p>
+			<div class="container">
+				<table class="table table-condensed">
+					<tbody>
+						<tr class="tbHeader">
+							<td><h4>Address</h4></td>
+							<td><h4>Hours and Contact</h4></td>
+							<td><h4>On-site Services</h4></td>
+						</tr>
+						<tr class="tbHeader">
+							<td>133 Belvedere BLVGD</td>
+							<td>7:00 a.m. - 11:00 p.m.</td>
+							<td>Concierge Services</td>
+						</tr>
+						<tr class="tbHeader">
+							<td>Orlando FL</td>
+							<td>407-945-7889</td>
+							<td>Valet Parking</td>
+						</tr>
+						<tr class="tbHeader">
+							<td>34764</td>
+							<td>customerservice@synergy.com</td>
+							<td>ATM</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</footer>
+		<script src = "../javascript/userRegistration.js"></script>
 	</body>
->>>>>>> a1d56863b14fdcb01ebb4ca5c85e86bb7ba30e67
 </html>

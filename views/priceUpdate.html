@@ -1,132 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="../css/synergy.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <title>Synergy Hotel Employee Login</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <script>$(function(){$("#nav-placeholder").load("nav.html");});</script> <!-- This loads nav bar-->
-
-</head>
-<body>
-<div id="nav-placeholder"></div><!-- This loads nav bar-->
-
-<div class="jumbotron text-center">
-    <h1>Manager's Portal</h1>
-
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-4">
-            <ul class="nav nav-pills nav-stacked">
-                <li><a href="managerPortal.html">Add Employee</a></li>
-                <li class="active"><a href="priceUpdate.html">Change Room Price</a></li>
-                <li><a href="#">Change Room</a></li>
-                <li><a href="#">Remove Employee</a></li>
-            </ul>
-        </div>
-
-
-        <div class="col-sm-8">
-            <h2 class="h2Color">Change Room Prices</h2>
-            <form id="priceUpdate" name="priceUpdate" method="post">
-
-                <div class="form-group">
-
-                    <input type="text" class="form-control" id="roomNumber" name="roomNumber" placeholder="Enter Room Number">
-                    <p id="error1">*</p>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" id="price" name="price" placeholder="Enter New Price">
-                    <span id="error2">*</span>
-                </div>
-
-                <input type="button" id="join_list" value="Submit">
-            </form>
-
-        </div>
-    </div>
-</div>
-
-
-<script>
+	<head>
+		<link rel="stylesheet" href="../css/synergy.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<title>Synergy Hotel Employee Login</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<script>$(function(){$("#nav-placeholder").load("nav.html");});</script> <!-- This loads nav bar-->
+	</head>
+	<body>
+		<div id="nav-placeholder"></div><!-- This loads nav bar-->
+		<div class="jumbotron text-center">
+			<h1>Manager's Portal</h1>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="managerPortal.html">Add Employee</a></li>
+						<li class="active"><a href="priceUpdate.html">Change Room Price</a></li>
+						<li><a href="#">Change Room</a></li>
+						<li><a href="#">Remove Employee</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-8">
+					<h2 class="h2Color">Change Room Prices</h2>
+					<form id="priceUpdate" name="priceUpdate" method="post">
+						<div class="form-group">
+							<input type="text" class="form-control" id="roomNumber" name="roomNumber" placeholder="Enter Room Number">
+							<p id="error1">*</p>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="price" name="price" placeholder="Enter New Price">
+							<span id="error2">*</span>
+						</div>
+						<input type="button" id="join_list" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+		<script>
 			function joinList(){
-  var nameEl = document.getElementById("firstname");
-  var lname = document.getElementById("lastname");
-  var username = document.getElementById("userName");
-  var password = document.getElementById("password");
-
-  var msg1 = document.getElementById("msg1");
-  var isValid = true;
-  if(nameEl.value == ""){
-    msg1.innerHTML = "This filed is required";
-
-    isValid = false;
-  }else if(lname.value == ""){
-  msg2.innerHTML = "This filed is required";
-  isValid = false;
-
-  }else if(username.value == ""){
-  msg3.innerHTML = "This filed is required";
-  isValid = false;
-  }else if(password.value == ""){
-  msg4.innerHTML = "This filed is required";
-  isValid = false;
-  } else{
-    nameEl.nextElementSibling.firstChild.nodeValue = "";
-	lname.nextElementSibling.firstChild.nodeValue = "";
-	username.nextElementSibling.firstChild.nodeValue = "";
-	password.nextElementSibling.firstChild.nodeValue = "";
-  }
-
-}
-var mybtn = document.getElementById("join_list");
-mybtn.addEventListener("click", joinList, false);
-
-
-
-
-			</script>
-
-</body>
-</html><script>
-(function() {
-  var ws = new WebSocket('ws://' + window.location.host + '/jb-server-page?reloadServiceClientId=9');
-  ws.onmessage = function (msg) {
-      if (msg.data === 'reload') {
-          window.location.reload();
-      }
-      if (msg.data.startsWith('update-css ')) {
-          var messageId = msg.data.substring(11);
-          var links = document.getElementsByTagName('link');
-          for (var i = 0; i < links.length; i++) {
-              var link = links[i];
-              if (link.rel !== 'stylesheet') continue;
-              var clonedLink = link.cloneNode(true);
-              var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
-              if (newHref !== link.href) {
-                clonedLink.href = newHref;
-              }
-              else {
-                var indexOfQuest = newHref.indexOf('?');
-                if (indexOfQuest >= 0) {
-                  // to support ?foo#hash
-                  clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
-                                    newHref.substring(indexOfQuest + 1);
-                }
-                else {
-                  clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
-                }
-              }
-              link.replaceWith(clonedLink);
-          }
-      }
-  };
-})();
+				var nameEl = document.getElementById("firstname");
+				var lname = document.getElementById("lastname");
+				var username = document.getElementById("userName");
+				var password = document.getElementById("password");
+				var msg1 = document.getElementById("msg1");
+				var isValid = true;
+				if(nameEl.value == "") {
+					msg1.innerHTML = "This filed is required";
+					isValid = false;
+				} else if(lname.value == "") {
+					msg2.innerHTML = "This filed is required";
+					isValid = false;
+				} else if(username.value == "") {
+					msg3.innerHTML = "This filed is required";
+					isValid = false;
+				} else if(password.value == "") {
+					msg4.innerHTML = "This filed is required";
+					isValid = false;
+				} else {
+					nameEl.nextElementSibling.firstChild.nodeValue = "";
+					lname.nextElementSibling.firstChild.nodeValue = "";
+					username.nextElementSibling.firstChild.nodeValue = "";
+					password.nextElementSibling.firstChild.nodeValue = "";
+				}
+			}
+			var mybtn = document.getElementById("join_list");
+			mybtn.addEventListener("click", joinList, false);
+		</script>
+	</body>
+</html>
+<script>
+	(function() {
+		var ws = new WebSocket('ws://' + window.location.host + '/jb-server-page?reloadServiceClientId=9');
+		ws.onmessage = function (msg) {
+			if(msg.data === 'reload') {
+				window.location.reload();
+			}
+			if(msg.data.startsWith('update-css ')) {
+				var messageId = msg.data.substring(11);
+				var links = document.getElementsByTagName('link');
+				for(var i = 0; i < links.length; i++) {
+					var link = links[i];
+					if(link.rel !== 'stylesheet') continue;
+					var clonedLink = link.cloneNode(true);
+					var newHref = link.href.replace(/(&|\?)jbUpdateLinksId=\d+/, "$1jbUpdateLinksId=" + messageId);
+					if(newHref !== link.href) {
+						clonedLink.href = newHref;
+					} else {
+						var indexOfQuest = newHref.indexOf('?');
+						if(indexOfQuest >= 0) {
+							// to support ?foo#hash
+							clonedLink.href = newHref.substring(0, indexOfQuest + 1) + 'jbUpdateLinksId=' + messageId + '&' +
+									newHref.substring(indexOfQuest + 1);
+						} else {
+							clonedLink.href += '?' + 'jbUpdateLinksId=' + messageId;
+						}
+					}
+					link.replaceWith(clonedLink);
+				}
+			}
+		};
+	})();
 </script>
