@@ -23,5 +23,26 @@
 
  .form-horizontal{
     width:180px;
-    margin-left:570px;}
+    margin-left:140px;}
   h1,h3,footer{text-align:center;}
+  #priceUpdate{
+      width:280px;
+      margin-left:140px;
+      background: #F9F9F9;
+      padding: 30px;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    .h2Color{margin-left:140px;}
+
+
+    .h2Color{color:#f26926;}
+    #error1, #error2{color:red;}
+    input[type=button]{background-color:#f26926;padding:12px;color:white;font-size:18px;
+    border:none;font-weight:bold;width:100%;
+    }
+    input[type=button]:hover{background-color:salmon;font-size:20px;}
+.nav-pills{
+margin-left:78em !important;
+width:280px;
+text-align:center;
+			}
