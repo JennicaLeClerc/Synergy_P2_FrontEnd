@@ -1,7 +1,6 @@
 var form = document.querySelector("form");
 
 
-
 function toggleClass(element,classString,toggleOn){
 	cl = ""
 	for (const s of element.className.split(" ")){
@@ -20,11 +19,11 @@ function response(responseText){
 	toggleClass(document.getElementById('error'),"hide1",true)
 	var jn = JSON.parse(responseText)
 	localStorage.setItem('token',"Bearer "+jn['jwt'])
-	window.location.replace("index.html");
+	//window.location.replace("index.html");
+	window.location.href = "index.html";
 }
 
 function httpGetAsync(theUrl,callbackOK,callbackFAIL,body)
-//callbackFail removed
 {
 	var xmlHttp = new XMLHttpRequest();
 	xmlHttp.onreadystatechange = function() { 
@@ -55,7 +54,5 @@ form.addEventListener('submit', function (e) {
 	js['role'] = "USER"
 	console.log(js)
 	httpGetAsync("http://localhost:5000/authenticate",response,fail,js)
-    //httpGetAsync("http://localhost:5000/authenticate",response,js)
-
 
 });
