@@ -110,6 +110,7 @@ mybtn.addEventListener("click", joinList, false);
 </body>
 </html><script>
 (function() {
+	console.log("WHAT IS THIS")
   var ws = new WebSocket('ws://' + window.location.host + '/jb-server-page?reloadServiceClientId=9');
   ws.onmessage = function (msg) {
       if (msg.data === 'reload') {
