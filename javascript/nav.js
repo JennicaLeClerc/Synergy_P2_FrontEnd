@@ -61,7 +61,7 @@ if(exp - Date.now() <=0 ) {
 
 if(exp - Date.now() <=0 ) {
 	console.log("JWT exp");
-	ls.textContent = "login";
+	ls.textContent = "Login";
 	ls.href = "../views/userlogin.html";
 	console.log(ls.attributes.href);
 } else {

@@ -17,7 +17,8 @@ function response(responseText) {
 	toggleClass(document.getElementById('error'), "hide1", true);
 	var jn = JSON.parse(responseText);
 	localStorage.setItem('token',"Bearer " + jn['jwt']);
-	//window.location.replace("index.html");
+	console.log(localStorage.getItem('token'))
+	window.location.replace("index.html");
 	window.location.href = "index.html";
 }
 
