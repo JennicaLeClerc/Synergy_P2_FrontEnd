@@ -9,9 +9,6 @@ h1,h3,footer{text-align:center;}
 	display:flex;
 	flex-direction:column;
 	background-color:#f7f7f7;
-	padding:20px;
-	width:380px;
-	margin-left:140px;
 }
 	
 label{color:#f26926;}
@@ -42,7 +39,7 @@ h1,h3,footer{text-align:center;}
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.h2Color{margin-left:140px;}
+.h2Color{margin-bottom:10px;}
 
 .h2Color{color:#f26926;}
 
@@ -57,6 +54,50 @@ input[type=button]:hover{
 	background-color:salmon;font-size:20px;
 }
 
+ .form-horizontal{
+    width:180px;
+    margin-left:570px;}
+  h1,h3,footer{text-align:center;}
+
+
+  #userForm{
+    display:flex;
+    flex-direction:column;
+    background-color:#f7f7f7;
+  }
+  label{color:#f26926;}
+  .btn-default{background-color:#f26926 !important;
+    color:white !important;
+    font-weight:bold !important;
+    font-size:19px !important;
+  }
+    #msg1,#msg2,#msg3,#msg4,#msg5{
+    color:#dc143c;
+    font-size:19px;
+    }
+
+ .form-horizontal{
+    width:180px;
+    margin-left:140px;}
+  h1,h3,footer{text-align:center;}
+
+
+  #priceUpdate{
+      width:280px;
+      margin-left:140px;
+      background: #F9F9F9;
+      padding: 30px;
+     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+
+
+
+    .h2Color{color:#f26926;}
+    #error1, #error2{color:red;}
+    input[type=button]{background-color:#f26926;padding:12px;color:white;font-size:18px;
+    border:none;font-weight:bold;width:100%;
+    }
+    input[type=button]:hover{background-color:salmon;font-size:20px;}
 .nav-pills{
 	margin-left:78em !important;
 	width:280px;
