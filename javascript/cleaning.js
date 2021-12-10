@@ -1,5 +1,5 @@
 function toggleClass(element, classString, toggleOn) {
-	cl = ""
+	cl = "";
 	for(const s of element.className.split(" ")) {
 		if(s != classString) cl += " " + s;
 	}

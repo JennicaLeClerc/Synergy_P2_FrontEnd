@@ -1,1 +1,1 @@
-localStorage.setItem('token',"");
+localStorage.setItem('token', "");

@@ -41,7 +41,7 @@ function httpGetAsync(theUrl, callbackOK, callbackFAIL, body) {
 		}
 	}
 	xmlHttp.open("POST", theUrl, true); // true for asynchronous 
-	xmlHttp.setRequestHeader("Content-Type", "application/json")
+	xmlHttp.setRequestHeader("Content-Type", "application/json");
 	xmlHttp.send(JSON.stringify(body));
 }
 
