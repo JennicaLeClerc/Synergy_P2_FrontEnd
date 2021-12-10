@@ -8,11 +8,11 @@ function parseJwt(token) {
 };
 
 function toggleClass(element,classString,toggleOn){
-	cl = ""
+	cl = "";
 	for (const s of element.className.split(" ")){
-		if (s != classString) cl+=" "+s;
+		if (s != classString) cl += " " + s;
 	}
-	if (toggleOn) cl += " "+classString;
+	if (toggleOn) cl += " " + classString;
 	element.className = cl;
 }
 
@@ -54,8 +54,8 @@ if(exp - Date.now() <=0 ) {
 		toggleClass(document.getElementById("nav2"), "hideme", false);
 	else {
 		if(usertype == "MANAGER")
-		  toggleClass(document.getElementById("nav4"),"hideme",false);
-	  toggleClass(document.getElementById("nav3"),"hideme",false)
+			toggleClass(document.getElementById("nav4"), "hideme", false);
+		toggleClass(document.getElementById("nav3"), "hideme", false)
 	}
 }
 

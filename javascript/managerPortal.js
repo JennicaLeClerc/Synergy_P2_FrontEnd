@@ -5,19 +5,19 @@ function joinList(){
 	var password = document.getElementById("password");
 	var msg1 = document.getElementById("msg1");
 	var isValid = true;
-	if(nameEl.value == ""){
+	if(nameEl.value == "") {
 		msg1.innerHTML = "This filed is required";
 		isValid = false;
-	} else if(lname.value == ""){
+	} else if(lname.value == "") {
 		msg2.innerHTML = "This filed is required";
 		isValid = false;
-	} else if(username.value == ""){
+	} else if(username.value == "") {
 		msg3.innerHTML = "This filed is required";
 		isValid = false;
-	} else if(password.value == ""){
+	} else if(password.value == "") {
 		msg4.innerHTML = "This filed is required";
 		isValid = false;
-	} else{
+	} else {
 		nameEl.nextElementSibling.firstChild.nodeValue = "";
 		lname.nextElementSibling.firstChild.nodeValue = "";
 		username.nextElementSibling.firstChild.nodeValue = "";

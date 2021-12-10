@@ -12,7 +12,7 @@ function joinList() {
 }
 
 function fail(status) {
-	toggleClass(document.getElementById('error'), "hide1", false)
+	toggleClass(document.getElementById('error'), "hide1", false);
 }
 
 function httpGetAsync(theUrl, callbackFAIL, body) {
