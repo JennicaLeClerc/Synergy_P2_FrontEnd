@@ -26,7 +26,7 @@ function response(responseText){
 	toggleClass(document.getElementById('error'), "hide1", true);
 	var jn = JSON.parse(responseText);
 	localStorage.setItem('token', "Bearer " + jn['jwt']);
-	window.location.href ="employee.html";
+	window.location.href ="index.html";
 	console.log(parseJwt(jn['jwt']));
 }
 
