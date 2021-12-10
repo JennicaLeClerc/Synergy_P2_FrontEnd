@@ -15,5 +15,5 @@ if (localStorage.getItem('token')){
 }
 if (exp - Date.now() <=0 ) {
 	console.log("here1")
-	window.location.href ="userlogin.html";
+	window.location.replace("userlogin.html");
 }

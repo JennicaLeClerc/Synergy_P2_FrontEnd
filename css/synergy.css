@@ -9,9 +9,6 @@ h1,h3,footer{text-align:center;}
 	display:flex;
 	flex-direction:column;
 	background-color:#f7f7f7;
-	padding:20px;
-	width:380px;
-	margin-left:140px;
 }
 	
 label{color:#f26926;}
@@ -42,7 +39,7 @@ h1,h3,footer{text-align:center;}
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-.h2Color{margin-left:140px;}
+.h2Color{margin-bottom:10px;}
 
 .h2Color{color:#f26926;}
 
@@ -61,6 +58,8 @@ input[type=button]:hover{
     width:180px;
     margin-left:570px;}
   h1,h3,footer{text-align:center;}
+
+
   #userForm{
     display:flex;
     flex-direction:column;
@@ -81,6 +80,8 @@ input[type=button]:hover{
     width:180px;
     margin-left:140px;}
   h1,h3,footer{text-align:center;}
+
+
   #priceUpdate{
       width:280px;
       margin-left:140px;
@@ -88,7 +89,7 @@ input[type=button]:hover{
       padding: 30px;
      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     }
-    .h2Color{margin-left:140px;}
+
 
 
     .h2Color{color:#f26926;}

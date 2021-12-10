@@ -2,38 +2,35 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../css/synergy.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <title>Synergy Hotel Employee Login</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <script>$(function(){$("#nav-placeholder").load("nav.html");});</script> <!-- This loads nav bar-->
+		<!--MUST HAVE HEADERS                                                                                                   -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>$(function(){$("#nav-placeholder").load("nav.html");});</script> <!-- This loads nav bar-->
+		<script>$(function(){$("#footer-placeholder").load("footer.html");});</script> <!-- This loads nav bar-->
+		<!--MUST HAVE HEADERS                                                                                                   -->
+
 
 </head>
 <body>
-<div id="nav-placeholder"></div><!-- This loads nav bar-->
-
+	<div id="nav-placeholder"></div><!-- This loads nav bar-->
 <div class="jumbotron text-center">
     <h1>Manager's Portal</h1>
-
 </div>
+
 <div class="container">
     <div class="row">
         <div class="col-sm-4">
-            <ul class="nav nav-pills nav-stacked">
-                <li class="active"><a href="managerPortal.html">Add Employee</a></li>
-                <li><a href="#">Approve Room</a></li>
-                <li><a href="#">Change Room</a></li>
-                <li><a href="#">Remove Employee</a></li>
-            </ul>
         </div>
-
-
-        <div class="col-sm-8">
+        <div class="col-sm-4">
             <h2 class="h2Color">Add A New Employee</h2>
             <form id="userForm" action="userRegister" method="post">
                 <div class="form-group">
@@ -69,7 +66,7 @@
 
 
 <script>
-			function joinList(){
+function joinList(){
   var nameEl = document.getElementById("firstname");
   var lname = document.getElementById("lastname");
   var username = document.getElementById("userName");
