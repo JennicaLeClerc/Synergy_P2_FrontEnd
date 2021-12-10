@@ -1,17 +1,13 @@
-function toggleClass(element,classString,toggleOn){
+function toggleClass(element, classString, toggleOn) {
 	cl = ""
-	for (const s of element.className.split(" ")){
-		if (s != classString) cl+=" "+s;
+	for(const s of element.className.split(" ")) {
+		if(s != classString) cl += " " + s;
 	}
-	if (toggleOn) cl += " "+classString
+	if(toggleOn) cl += " " + classString;
 	element.className = cl;
 }
 
-
-
-
-
-function parseJwt (token) {
+function parseJwt(token) {
 	var base64Url = token.split('.')[1];
 	var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
 	var jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
@@ -19,5 +15,3 @@ function parseJwt (token) {
 	}).join(''));
 	return JSON.parse(jsonPayload);
 };
-
-
