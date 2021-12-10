@@ -3,6 +3,11 @@
 	margin-left:570px;
 }
 
+.form-horizontal{
+	width:180px;
+	margin-left:570px;
+}
+
 h1,h3,footer{text-align:center;}
 
 #userForm{
@@ -54,13 +59,7 @@ input[type=button]:hover{
 	background-color:salmon;font-size:20px;
 }
 
-.form-horizontal{
-	width:180px;
-	margin-left:570px;
-}
-
 h1,h3,footer{text-align:center;}
-
 
 #userForm{
 	display:flex;
@@ -109,4 +108,8 @@ input[type=button]:hover{background-color:salmon;font-size:20px;}
 	margin-left:78em !important;
 	width:280px;
 	text-align:center;
+}
+
+li{
+	list-style-type: none;
 }
