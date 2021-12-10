@@ -26,4 +26,11 @@ async function createReservation() {
 form.addEventListener('submit', function(e) {
 	e.preventDefault();
 	createReservation();
+	successBox();
 })
+
+async function successBox() {
+    if(window.confirm('Successfully Booked a Reservation! Click OK to return to the homepage.')){
+        window.location.href = 'index.html';
+    }
+}
